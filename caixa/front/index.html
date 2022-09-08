@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caixa</title>
+</head>
+<body onload="carregarTabela()">
+    <div class="title">
+    <h1 id="title">Livro Caixa</h1>
+    </div>
+    <hr>
+    <div class="filtros">
+        <div class="filtro-esq">
+    <span>Filtro:</span>
+    <select id="felipe" name="filtro">
+    </select>
+    </div>
+    <div class="filtro-dir">
+    <span>Novo Lançamento </span>
+    <button class="plusbtn">+</button>
+    </div>
+    </div>
+    <hr>
+
+    <div class="supTable">
+        <div class="debitos"><span>Debitos</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N_Lancamento</th>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody id="tab-deb">
+                    <tr class="linhamodelo model">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+
+        <div class="creditos"><span>Créditos</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N_Lancamento</th>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody id="tab-cre">
+                    <tr class="linhamodelo model">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+<script src="/front/index.js"></script>
+</html>

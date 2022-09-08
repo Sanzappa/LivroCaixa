@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.filtros{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plusbtn{
+    width: 20px;
+}
+
+.supTable{
+    display: flex;
+    justify-content: space-around;
+}
+
+.debitos, .creditos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.debitos > table, .creditos > table{
+    width: 50vw;
+}
+
