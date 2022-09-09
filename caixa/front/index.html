@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Caixa</title>
 </head>
-<body onload="carregarTabela()">
+<body onload="carregarTabela(), carregarDatas()">
     <div class="title">
     <h1 id="title">Livro Caixa</h1>
     </div>
@@ -15,15 +15,47 @@
     <div class="filtros">
         <div class="filtro-esq">
     <span>Filtro:</span>
-    <select id="felipe" name="filtro">
+    <select id="felipe" name="filtro" onchange="filtrarDatas(this.value)">
+        <option value="todos">Todos</option>
     </select>
     </div>
     <div class="filtro-dir">
     <span>Novo Lançamento </span>
-    <button class="plusbtn">+</button>
+    <button class="plusbtn" onclick="showModal()">+</button>
     </div>
     </div>
     <hr>
+
+    <div class="modal model">
+        <div class="campoCadastro">
+            <div class="cadTitulo">
+                <span>Cadastro</span>
+                <button onclick="showModal()"><img src="https://cdn-icons-png.flaticon.com/128/2997/2997911.png" alt=""></button>
+            </div>
+            <div class="campoInfo">
+                <span>Descrição:</span>
+                <input id="desc" type="text" placeholder="Digite a sua Descrição">
+            </div>
+            <div class="campoInfo">
+                <span>Tipo:</span>
+                <select id="sel" name="tipo">
+                    <option value="C">Entrada</option>
+                    <option value="D">Saída</option>
+                </select>
+            </div>
+            <div class="campoInfo">
+                <span>Valor:</span>
+                <input id="val" type="number">
+            </div>
+            <div class="enviar">
+                <button onclick="cadastrar(), showModal()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="saldo">
+        <span>Saldo acumulado: R$ <span id="saldo">121212</span></span>
+    </div>
 
     <div class="supTable">
         <div class="debitos"><span>Debitos</span>

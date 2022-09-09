@@ -7,6 +7,20 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+button{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+button > img{
+    height: 25px;
+}
+
 .title{
     margin-top: 20px;
     display: flex;
@@ -22,6 +36,7 @@
 
 .plusbtn{
     width: 20px;
+    font-size: 25px;
 }
 
 .supTable{
@@ -40,3 +55,59 @@
     width: 50vw;
 }
 
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campoCadastro{
+    height: 300px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cadTitulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.campoInfo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enviar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.model{
+    visibility: hidden;
+    display: none;
+}
+
+.saldo{
+    width: 100%;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
